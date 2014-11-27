@@ -35,6 +35,16 @@
 		<Linker>
 			<Add option="`sdl-config --libs`" />
 		</Linker>
+		<Unit filename="Animal.cpp" />
+		<Unit filename="Constante.cpp" />
+		<Unit filename="Constante.h" />
+		<Unit filename="GestionGamelles.cpp" />
+		<Unit filename="GestionSauvegarde.cpp" />
+		<Unit filename="Interface.cpp" />
+		<Unit filename="InterfaceSDL.cpp" />
+		<Unit filename="Jeu.cpp" />
+		<Unit filename="Nourriture.h" />
+		<Unit filename="Temps.cpp" />
 		<Unit filename="cb.bmp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
