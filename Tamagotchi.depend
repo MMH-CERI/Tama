@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1415007735 source:/home/etudiants/inf/uapv1200623/Projet_UML/Tamagotchi/main.cpp
+	<cstdlib>
+	"constante.h"
+	<stdlib.h>
+	<SDL/SDL.h>
+
+1415011328 /home/etudiants/inf/uapv1200623/Projet_UML/Tamagotchi/constante.h
+	<iostream>
+
+1415366043 source:/home/etudiants/inf/uapv1200623/Projet_UML/Tamagotchi/interface.cpp
+	<cstdlib>
+	<stdlib.h>
+	<SDL/SDL.h>
+
+1415366043 source:/home/etudiants/inf/uapv1200623/Tamagotchi/interface.cpp
+	<cstdlib>
+	<stdlib.h>
+	<SDL/SDL.h>
+
+1417094736 source:/home/etudiants/inf/uapv1200623/Tamagotchi/Animal.cpp
+	<iostream>
+	<unistd.h>
+	<time.h>
+	<string.h>
+	"Constante.h"
+	"Nourriture.h"
+
+1417094675 /home/etudiants/inf/uapv1200623/Tamagotchi/Constante.h
+	<iostream>
+	<string.h>
+
+1417091556 /home/etudiants/inf/uapv1200623/Tamagotchi/Nourriture.h
+
