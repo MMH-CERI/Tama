@@ -14,12 +14,12 @@ Nourriture::~Nourriture()
 
 void Nourriture::gestionGeau(int eau)
 {
-	quantiteEau += eau
+	quantiteEau += eau;
 }
 
 void Nourriture::gestionGnourriture(int nourriture)
 {
-	quantiteNourriture += nourriture
+	quantiteNourriture += nourriture;
 }
 
 bool Nourriture::retirerEau(int eau)

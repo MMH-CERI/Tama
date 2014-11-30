@@ -3,12 +3,10 @@
 
 class Nourriture
 {
-private:
+    public:
 
     int quantiteEau;
     int quantiteNourriture;
-
-    public:
 
     Nourriture();
     ~Nourriture();

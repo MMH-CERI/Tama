@@ -86,9 +86,9 @@ void Constante::gestionVie()
     }
 }
 
-void Constante::gestionFaim()
+void gestionFaim(Nourriture N)
 {
-
+    N.quantiteNourriture--;
 }
 
 void Constante::gestionSoif()

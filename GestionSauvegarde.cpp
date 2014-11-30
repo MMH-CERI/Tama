@@ -3,7 +3,7 @@
 
 using namespace std;
 
-string sauvegarde();
+string sauvegarde()
 {
 
 }
