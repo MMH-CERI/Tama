@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include "Nourriture.h"
 
 using namespace std;
 
@@ -22,8 +23,8 @@ private:
     ~Constante();
     void giveName();
     void gestionVie();
-    void gestionFaim();
-    void gestionSoif();
+    void gestionFaim(Nourriture);
+    void gestionSoif(Nourriture);
     void gestionJoie();
     void gestionHygiene();
     void gestionFatigue();

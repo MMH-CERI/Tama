@@ -86,24 +86,56 @@ void Constante::gestionVie()
     }
 }
 
-void gestionFaim(Nourriture N)
+void Constante::gestionFaim(Nourriture N)
 {
-    N.quantiteNourriture--;
+    while(faim!=0)
+    {
+        faim--;
+        if(faim <75 && N.quantiteNourriture >0)
+        {
+            while(faim==100 || N.quantiteEau == 0)
+            {
+                faim++;
+                N.quantiteNourriture--;
+            }
+        }
+        sleep(100);
+    }
 }
 
-void Constante::gestionSoif()
+void Constante::gestionSoif(Nourriture N)
 {
-
+    while(soif>=0)
+    {
+        soif--;
+        if(soif <75 && N.quantiteEau >0)
+        {
+            while(soif==100 || N.quantiteEau == 0)
+            {
+                soif++;
+                N.quantiteEau--;
+            }
+        }
+        sleep(50);
+    }
 }
 
 void Constante::gestionJoie()
 {
-
+    while(joie>=0)
+    {
+        joie--;
+        sleep(100);
+    }
 }
 
 void Constante::gestionHygiene()
 {
-
+    while(hygiene>=0)
+    {
+        hygiene--;
+        sleep(100);
+    }
 }
 
 void Constante::gestionFatigue()
@@ -113,5 +145,6 @@ void Constante::gestionFatigue()
 
 void Constante::caresserAnimal()
 {
-
+    if(joie>75) joie = 100;
+    else if(joie >=0 && joie<=75) joie = joie+25;
 }
