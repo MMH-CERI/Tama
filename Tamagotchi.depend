@@ -32,7 +32,7 @@
 
 1417091556 /home/etudiants/inf/uapv1200623/Tamagotchi/Nourriture.h
 
-1417373494 source:/home/dylan/Tama/Animal.cpp
+1417467143 source:/home/dylan/Tama/Animal.cpp
 	<iostream>
 	<unistd.h>
 	<time.h>
@@ -40,9 +40,10 @@
 	"Constante.h"
 	"Nourriture.h"
 
-1417371171 /home/dylan/Tama/Constante.h
+1417466622 /home/dylan/Tama/Constante.h
 	<iostream>
 	<string.h>
+	"Nourriture.h"
 
 1417373559 /home/dylan/Tama/Nourriture.h
 

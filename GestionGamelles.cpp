@@ -15,14 +15,16 @@ Nourriture::~Nourriture()
 void Nourriture::gestionGeau(int eau)
 {
 	quantiteEau += eau;
+	gestionSoif(Nourriture);
 }
 
 void Nourriture::gestionGnourriture(int nourriture)
 {
 	quantiteNourriture += nourriture;
+	gestionFaim(Nourriture);
 }
 
-bool Nourriture::retirerEau(int eau)
+/*bool Nourriture::retirerEau(int eau)
 {
 	if(quantiteEau = 0 || eau > quantiteEau)
 		return false;
@@ -38,4 +40,4 @@ bool Nourriture::retirerNourriture(int nourriture)
 
 	quantiteNourriture -= nourriture;
 	return true;
-}
+}*/
