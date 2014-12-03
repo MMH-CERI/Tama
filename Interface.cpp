@@ -7,7 +7,7 @@
 
 #include <SDL/SDL.h>
 
-int main ( int argc, char** argv )
+int interface( int argc, char** argv )
 {
     // initialize SDL video
     if ( SDL_Init( SDL_INIT_VIDEO ) < 0 )
