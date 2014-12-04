@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Constante.h"
 #include "Nourriture.h"
 
 using namespace std;
@@ -15,14 +16,19 @@ Nourriture::~Nourriture()
 void Nourriture::gestionGeau(int eau)
 {
 	quantiteEau += eau;
-	gestionSoif(Nourriture);
 }
+
+/*void reloadSoif()
+{
+    gestionSoif();
+}
+
 
 void Nourriture::gestionGnourriture(int nourriture)
 {
 	quantiteNourriture += nourriture;
 	gestionFaim(Nourriture);
-}
+}*/
 
 /*bool Nourriture::retirerEau(int eau)
 {

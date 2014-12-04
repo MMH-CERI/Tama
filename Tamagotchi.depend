@@ -40,28 +40,38 @@
 	"Constante.h"
 	"Nourriture.h"
 
-1417466622 /home/dylan/Tama/Constante.h
+1417701417 /home/dylan/Tama/Constante.h
 	<iostream>
 	<string.h>
 	"Nourriture.h"
 
 1417373559 /home/dylan/Tama/Nourriture.h
 
-1417373625 source:/home/dylan/Tama/GestionGamelles.cpp
+1417702810 source:/home/dylan/Tama/GestionGamelles.cpp
 	<iostream>
+	"Constante.h"
 	"Nourriture.h"
 
-1417373633 source:/home/dylan/Tama/GestionSauvegarde.cpp
+1417702877 source:/home/dylan/Tama/GestionSauvegarde.cpp
 	<iostream>
+	"Nourriture.h"
+	"Constante.h"
 
-1417371171 source:/home/dylan/Tama/Jeu.cpp
+1417628125 source:/home/dylan/Tama/Jeu.cpp
 	<iostream>
+	"Nourriture.h"
+	"Constante.h"
 
 1417371171 source:/home/dylan/Tama/Temps.cpp
 	<iostream>
 	<time.h>
 
-1417373985 source:/home/dylan/Tama/Interface.cpp
+1417628043 source:/home/dylan/Tama/Interface.cpp
+	<cstdlib>
+	<stdlib.h>
+	<SDL/SDL.h>
+
+1417628092 source:/home/dylan/Tama/InterfaceSDL.cpp
 	<cstdlib>
 	<stdlib.h>
 	<SDL/SDL.h>
