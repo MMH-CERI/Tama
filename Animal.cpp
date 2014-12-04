@@ -18,6 +18,11 @@ Constante::Constante()
     fatigue = 100;
 }
 
+Constante::~Constante()
+{
+
+}
+
 void Constante::giveName()
 {
     if(nom=="\0")

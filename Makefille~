@@ -1,0 +1,4 @@
+
+Jeu: Jeu.o Animal.o GestionGamelle.o Interface.o InterfaceSDL.o Temps.o GestionSauegarde.o
+
+	g++ -o Jeu.o Animal.o GestionGamelle.o Interface.o InterfaceSDL.o Temps.o GestionSauegarde.o

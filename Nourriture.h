@@ -16,4 +16,6 @@ class Nourriture
     bool retirerNourriture(int);
 };
 
+
+
 #endif // NOURRITURE_H_INCLUDED

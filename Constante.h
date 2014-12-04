@@ -1,3 +1,6 @@
+#ifndef CONSTANTE_H_INCLUDED
+#define CONSTANTE_H_INCLUDED
+
 #include <iostream>
 #include <string.h>
 #include "Nourriture.h"
@@ -16,11 +19,11 @@ public:
     int soif;
     int hygiene;
     int fatigue;
+    Constante();
+    ~Constante();
 
 private:
 
-    Constante();
-    ~Constante();
     void giveName();
     void gestionVie();
     void gestionFaim(Nourriture);
@@ -30,3 +33,6 @@ private:
     void gestionFatigue();
     void caresserAnimal();
 };
+
+#endif // CONSTANTE_H_INCLUDED
+

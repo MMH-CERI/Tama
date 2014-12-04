@@ -1,0 +1,34 @@
+
+
+Jeu: Jeu.o Animal.o GestionGamelles.o Interface.o InterfaceSDL.o Temps.o GestionSauvegarde.o
+
+	g++ -o Jeu.o Animal.o GestionGamelles.o Interface.o InterfaceSDL.o Temps.o GestionSauvegarde.o
+
+Jeu.o: Jeu.cpp Interface.h
+
+	g++ Jeu.cpp -o Jeu
+
+Animal.o: Animal.cpp
+	
+	g++ Animal.cpp Interface.cpp -o Animal
+
+GestionGamelles.o:
+
+	g++ GestionGamelles.cpp -o GestionGamelles
+
+Interface.o:
+
+	g++ Interface.cpp -o Interface
+
+InterfaceSDL.o:
+
+	g++ InterfaceSDL.cpp -o InterfaceSDL
+
+Temps.o:
+
+	g++ Temps.cpp -o Temps
+
+GestionSauvegarde.o:
+
+	g++ GestionSauvegarde.cpp -o GestionSauvegarde
+
