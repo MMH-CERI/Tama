@@ -67,11 +67,12 @@
 	<iostream>
 	<time.h>
 
-1417704881 source:/home/dylan/Tama/Interface.cpp
+1417879950 source:/home/dylan/Tama/Interface.cpp
 	<cstdlib>
 	<stdlib.h>
 	<SDL/SDL.h>
 	"Constante.h"
+	<string.h>
 
 1417628092 source:/home/dylan/Tama/InterfaceSDL.cpp
 	<cstdlib>

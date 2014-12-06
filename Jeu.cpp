@@ -9,7 +9,7 @@ using namespace std;
 int main(int argc, char** argv )
 {
     Constante c;
-    interface();
+    interface(c);
 
 return 0;
 }
