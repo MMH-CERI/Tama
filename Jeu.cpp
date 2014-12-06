@@ -10,6 +10,7 @@ int main(int argc, char** argv )
 {
     Constante c;
     interface(c);
+    c.gestionVie();
 
 return 0;
 }

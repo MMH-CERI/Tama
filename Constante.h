@@ -22,7 +22,6 @@ public:
     Constante();
     ~Constante();
 
-private:
 
     void giveName();
     void gestionVie();
