@@ -7,4 +7,4 @@
 
 using namespace std;
 
-int interface(Constante);
+int interface(Constante,Nourriture);

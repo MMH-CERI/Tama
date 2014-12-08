@@ -9,8 +9,7 @@ using namespace std;
 int main(int argc, char** argv )
 {
     Constante c;
-    interface(c);
-    c.gestionVie();
+    Nourriture n;
+    interface(c,n);
 
-return 0;
 }

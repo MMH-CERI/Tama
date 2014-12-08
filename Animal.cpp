@@ -104,7 +104,7 @@ void Constante::gestionFaim(Nourriture N)
                 N.quantiteNourriture--;
             }
         }
-        sleep(100);
+        sleep(10);
     }
 }
 

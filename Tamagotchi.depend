@@ -32,7 +32,7 @@
 
 1417091556 /home/etudiants/inf/uapv1200623/Tamagotchi/Nourriture.h
 
-1417705341 source:/home/dylan/Tama/Animal.cpp
+1417975928 source:/home/dylan/Tama/Animal.cpp
 	<iostream>
 	<unistd.h>
 	<time.h>
@@ -57,7 +57,7 @@
 	"Nourriture.h"
 	"Constante.h"
 
-1417707560 source:/home/dylan/Tama/Jeu.cpp
+1417975983 source:/home/dylan/Tama/Jeu.cpp
 	<iostream>
 	"Nourriture.h"
 	"Constante.h"
@@ -67,7 +67,7 @@
 	<iostream>
 	<time.h>
 
-1417879950 source:/home/dylan/Tama/Interface.cpp
+1417976383 source:/home/dylan/Tama/Interface.cpp
 	<cstdlib>
 	<stdlib.h>
 	<SDL/SDL.h>
@@ -85,8 +85,9 @@
 	<SDL/SDL.h>
 	"Constante.h"
 
-1417707570 /home/dylan/Tama/Interface.h
+1417879980 /home/dylan/Tama/Interface.h
 	<iostream>
 	<string.h>
 	"Nourriture.h"
+	"Constante.h"
 
