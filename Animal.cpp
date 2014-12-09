@@ -23,6 +23,21 @@ Constante::~Constante()
 
 }
 
+int Constante::chrono(string entrer)
+{
+    while(entrer != 'Arret')
+    {
+        int tempsEcoule;
+        int chronoSoif = 50000;
+        int chronoFaim = 100000;
+        tempsEcoule = SDL_GetTicks();
+        if((chronoFaim - tempsEcoule) == 0)
+        {
+            gestionFaim();
+        }
+    }
+}
+
 void Constante::giveName()
 {
     if(nom=="\0")
@@ -40,7 +55,6 @@ void Constante::gestionVie()
         do
         {
             vie--;
-            sleep(1800);
         }
         while(vie>0);
     }
@@ -49,7 +63,6 @@ void Constante::gestionVie()
         do
         {
             vie++;
-            sleep(300);
         }
         while(vie<100);
     }
@@ -58,7 +71,6 @@ void Constante::gestionVie()
         do
         {
             vie = vie+2;
-            sleep(300);
         }
         while(vie<100);
     }
@@ -67,7 +79,6 @@ void Constante::gestionVie()
         do
         {
             vie = vie+3;
-            sleep(300);
         }
         while(vie<100);
     }
@@ -76,7 +87,6 @@ void Constante::gestionVie()
         do
         {
             vie = vie+4;
-            sleep(300);
         }
         while(vie<100);
     }
@@ -85,7 +95,6 @@ void Constante::gestionVie()
         do
         {
             vie = vie+5;
-            sleep(300);
         }
         while(vie<100);
     }
@@ -93,9 +102,6 @@ void Constante::gestionVie()
 
 void Constante::gestionFaim(Nourriture N)
 {
-    while(faim!=0)
-    {
-        faim--;
         if(faim <75 && N.quantiteNourriture >0)
         {
             while(faim==100 || N.quantiteEau == 0)
@@ -104,8 +110,6 @@ void Constante::gestionFaim(Nourriture N)
                 N.quantiteNourriture--;
             }
         }
-        sleep(10);
-    }
 }
 
 void Constante::gestionSoif(Nourriture N)
