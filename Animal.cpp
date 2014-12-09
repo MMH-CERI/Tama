@@ -1,9 +1,11 @@
 #include <iostream>
 #include <unistd.h>
+#include <SDL.h>
 #include <time.h>
 #include <string.h>
 #include "Constante.h"
 #include "Nourriture.h"
+#include <signal.h>
 
 using namespace std;
 
@@ -23,20 +25,6 @@ Constante::~Constante()
 
 }
 
-int Constante::chrono(string entrer)
-{
-    while(entrer != 'Arret')
-    {
-        int tempsEcoule;
-        int chronoSoif = 50000;
-        int chronoFaim = 100000;
-        tempsEcoule = SDL_GetTicks();
-        if((chronoFaim - tempsEcoule) == 0)
-        {
-            gestionFaim();
-        }
-    }
-}
 
 void Constante::giveName()
 {
@@ -156,4 +144,19 @@ void Constante::caresserAnimal()
 {
     if(joie>75) joie = 100;
     else if(joie >=0 && joie<=75) joie = joie+25;
+}
+
+void Constante::chrono(string entrer, Nourriture N)
+{
+    while(entrer != "Arret")
+    {
+        int tempsEcoule;
+        //int chronoSoif = 50000;
+        int chronoFaim = 100000;
+        tempsEcoule = SDL_GetTicks();
+        if((chronoFaim - tempsEcoule) == 0)
+        {
+            gestionFaim(N);
+        }
+    }
 }

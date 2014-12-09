@@ -21,7 +21,7 @@ public:
     int fatigue;
     Constante();
     ~Constante();
-
+    void chrono(string, Nourriture);
 
     void giveName();
     void gestionVie();
