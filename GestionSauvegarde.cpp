@@ -5,12 +5,12 @@
 
 using namespace std;
 
-/*string sauvegarde()
+string sauvegarde()//sauvegarde
 {
 
 }
 
-string chargement()
+string chargement()//chargement de partie
 {
 
-}*/
+}

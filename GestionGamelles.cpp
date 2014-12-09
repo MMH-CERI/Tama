@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Nourriture::Nourriture()
+Nourriture::Nourriture()//constructeur de la classe Nourriture
 {
 	quantiteEau = 0;
 	quantiteNourriture = 0;
@@ -13,37 +13,15 @@ Nourriture::Nourriture()
 Nourriture::~Nourriture()
 {}
 
-void Nourriture::gestionGeau(int eau)
+void Nourriture::gestionGeau(int eau)//fonction de gestion du niveau d'eau dans la gamelle
 {
 	quantiteEau += eau;
 }
 
-/*void reloadSoif()
-{
-    gestionSoif();
-}
 
 
-void Nourriture::gestionGnourriture(int nourriture)
+void Nourriture::gestionGnourriture(int nourriture)//fonction de gestion du niveau de nourriture dans la gamelle
 {
 	quantiteNourriture += nourriture;
-	gestionFaim(Nourriture);
-}*/
-
-/*bool Nourriture::retirerEau(int eau)
-{
-	if(quantiteEau = 0 || eau > quantiteEau)
-		return false;
-
-	quantiteEau -= eau;
-	return true;
 }
 
-bool Nourriture::retirerNourriture(int nourriture)
-{
-	if(quantiteNourriture = 0 || nourriture > quantiteNourriture)
-		return false;
-
-	quantiteNourriture -= nourriture;
-	return true;
-}*/

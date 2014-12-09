@@ -9,7 +9,7 @@
 
 using namespace std;
 
-Constante::Constante()
+Constante::Constante()//Constructeur de la classe Constante
 {
     nom == "\0";
     vie = 100;
@@ -20,13 +20,19 @@ Constante::Constante()
     fatigue = 100;
 }
 
-Constante::~Constante()
+Constante::~Constante()//destructeur de la classe Constante
 {
-
+    nom == "\0";
+    vie = 0;
+    faim = 0;
+    joie = 0;
+    soif = 0;
+    hygiene = 0;
+    fatigue = 0;
 }
 
 
-void Constante::giveName()
+void Constante::giveName()//fonction permettant de donner un nom à l'animal
 {
     if(nom=="\0")
     {
@@ -36,7 +42,7 @@ void Constante::giveName()
     else return;
 }
 
-void Constante::gestionVie()
+void Constante::gestionVie() //Fonction gérant la barre de vie
 {
     if(faim == 0 || soif == 0)
     {
@@ -88,7 +94,7 @@ void Constante::gestionVie()
     }
 }
 
-void Constante::gestionFaim(Nourriture N)
+void Constante::gestionFaim(Nourriture N)//Fonction gérant la barre de faim
 {
         if(faim <75 && N.quantiteNourriture >0)
         {
@@ -100,7 +106,7 @@ void Constante::gestionFaim(Nourriture N)
         }
 }
 
-void Constante::gestionSoif(Nourriture N)
+void Constante::gestionSoif(Nourriture N)//Fonction gérant la barre de soif
 {
     while(soif>=0)
     {
@@ -113,40 +119,37 @@ void Constante::gestionSoif(Nourriture N)
                 N.quantiteEau--;
             }
         }
-        sleep(50);
     }
 }
 
-void Constante::gestionJoie()
+void Constante::gestionJoie()//Fonction gérant la barre de joie
 {
     while(joie>=0)
     {
         joie--;
-        sleep(100);
     }
 }
 
-void Constante::gestionHygiene()
+void Constante::gestionHygiene()//Fonction gérant la barre d'hygiène
 {
     while(hygiene>=0)
     {
         hygiene--;
-        sleep(100);
     }
 }
 
-void Constante::gestionFatigue()
+void Constante::gestionFatigue()//Fonction gérant la barre de fatigue
 {
 
 }
 
-void Constante::caresserAnimal()
+void Constante::caresserAnimal()//Fonction permettant de caresser l'animal
 {
     if(joie>75) joie = 100;
     else if(joie >=0 && joie<=75) joie = joie+25;
 }
 
-void Constante::chrono(string entrer, Nourriture N)
+void Constante::chrono(string entrer, Nourriture N)//Fonction permettant d'appeler les fonctions de gestion en fonctions du temps
 {
     while(entrer != "Arret")
     {

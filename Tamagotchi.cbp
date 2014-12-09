@@ -40,7 +40,6 @@
 		<Unit filename="GestionGamelles.cpp" />
 		<Unit filename="GestionSauvegarde.cpp" />
 		<Unit filename="Interface.cpp" />
-		<Unit filename="Interface.h" />
 		<Unit filename="InterfaceSDL.cpp" />
 		<Unit filename="Jeu.cpp" />
 		<Unit filename="Nourriture.h" />

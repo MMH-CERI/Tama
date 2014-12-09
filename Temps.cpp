@@ -3,12 +3,12 @@
 
 using namespace std;
 
-void date()
+int date(string dateSauv)//Gestion convertissant un string en int
 {
 
 }
 
-void MAJ()
+void MAJ()//MAJ des constantes depuis la dernière sauvegarde
 {
 
 }
