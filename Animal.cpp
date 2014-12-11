@@ -1,6 +1,5 @@
 #include <iostream>
 #include <unistd.h>
-#include <SDL.h>
 #include <time.h>
 #include <string.h>
 #include "Constante.h"
@@ -149,17 +148,3 @@ void Constante::caresserAnimal()//Fonction permettant de caresser l'animal
     else if(joie >=0 && joie<=75) joie = joie+25;
 }
 
-void Constante::chrono(string entrer, Nourriture N)//Fonction permettant d'appeler les fonctions de gestion en fonctions du temps
-{
-    while(entrer != "Arret")
-    {
-        int tempsEcoule;
-        //int chronoSoif = 50000;
-        int chronoFaim = 100000;
-        tempsEcoule = SDL_GetTicks();
-        if((chronoFaim - tempsEcoule) == 0)
-        {
-            gestionFaim(N);
-        }
-    }
-}

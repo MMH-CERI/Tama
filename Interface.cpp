@@ -16,5 +16,15 @@ int interface(Constante C, Nourriture N)//interface de test
     cout<<"Vie :"<<C.vie<<endl;
     cout<<"Faim :"<<C.faim<<endl;
     system (cmd.c_str ());
+       int chronoInterface = 10000;
+    int temps = SDL_GetTicks();
+    while(1)
+    {
+    if(chronoInterface - temps == 0)
+    {
+        system("clear");
+        interface(C,N);
+    }
+    }
     return 0;
 }

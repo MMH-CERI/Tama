@@ -32,44 +32,45 @@
 
 1417091556 /home/etudiants/inf/uapv1200623/Tamagotchi/Nourriture.h
 
-1418165038 source:/home/dylan/Tama/Animal.cpp
+1418314869 source:/home/dylan/Tama/Animal.cpp
 	<iostream>
 	<unistd.h>
-	<SDL.h>
 	<time.h>
 	<string.h>
 	"Constante.h"
 	"Nourriture.h"
 	<signal.h>
 
-1418156104 /home/dylan/Tama/Constante.h
+1418314844 /home/dylan/Tama/Constante.h
 	<iostream>
 	<string.h>
 	"Nourriture.h"
 
 1417705101 /home/dylan/Tama/Nourriture.h
 
-1417702810 source:/home/dylan/Tama/GestionGamelles.cpp
+1418166047 source:/home/dylan/Tama/GestionGamelles.cpp
 	<iostream>
 	"Constante.h"
 	"Nourriture.h"
 
-1417702877 source:/home/dylan/Tama/GestionSauvegarde.cpp
+1418165975 source:/home/dylan/Tama/GestionSauvegarde.cpp
 	<iostream>
 	"Nourriture.h"
 	"Constante.h"
 
-1417976372 source:/home/dylan/Tama/Jeu.cpp
+1418314997 source:/home/dylan/Tama/Jeu.cpp
 	<iostream>
 	"Nourriture.h"
 	"Constante.h"
 	"Interface.h"
+	<thread>
+	<SDL.h>
 
-1417371171 source:/home/dylan/Tama/Temps.cpp
+1418165929 source:/home/dylan/Tama/Temps.cpp
 	<iostream>
 	<time.h>
 
-1418157119 source:/home/dylan/Tama/Interface.cpp
+1418315383 source:/home/dylan/Tama/Interface.cpp
 	<cstdlib>
 	<stdlib.h>
 	<SDL/SDL.h>
@@ -77,7 +78,7 @@
 	<string.h>
 	<signal.h>
 
-1417628092 source:/home/dylan/Tama/InterfaceSDL.cpp
+1418165929 source:/home/dylan/Tama/InterfaceSDL.cpp
 	<cstdlib>
 	<stdlib.h>
 	<SDL/SDL.h>
