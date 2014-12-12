@@ -2,33 +2,33 @@
 
 Jeu: Jeu.o Animal.o GestionGamelles.o Interface.o InterfaceSDL.o Temps.o GestionSauvegarde.o
 
-	g++ -o Jeu.o Animal.o GestionGamelles.o Interface.o InterfaceSDL.o Temps.o GestionSauvegarde.o
+	g++ Jeu.o Animal.o GestionGamelles.o Interface.o InterfaceSDL.o Temps.o GestionSauvegarde.o -o Jeu -lSDL
 
 Jeu.o: Jeu.cpp Interface.h
 
-	g++ Jeu.cpp -o Jeu
+	g++ -c -std=c++11 Jeu.cpp -o Jeu.o
 
-Animal.o: Animal.cpp
+Animal.o: Animal.cpp Constante.h Nourriture.h
 	
-	g++ Animal.cpp Interface.cpp -o Animal
+	g++ -c -std=c++11 Animal.cpp -o Animal.o
 
-GestionGamelles.o:
+GestionGamelles.o: GestionGamelles.cpp Constante.h Nourriture.h
 
-	g++ GestionGamelles.cpp -o GestionGamelles
+	g++ -c -std=c++11 GestionGamelles.cpp -o GestionGamelles.o
 
-Interface.o:
+Interface.o: Interface.cpp Constante.h
 
-	g++ Interface.cpp -o Interface
+	g++ -c -std=c++11 Interface.cpp -o Interface.o
 
-InterfaceSDL.o:
+InterfaceSDL.o: InterfaceSDL.cpp 
 
-	g++ InterfaceSDL.cpp -o InterfaceSDL
+	g++  -c -std=c++11 InterfaceSDL.cpp -o InterfaceSDL.o
 
-Temps.o:
+Temps.o: Temps.cpp
 
-	g++ Temps.cpp -o Temps
+	g++  -c -std=c++11 Temps.cpp -o Temps.o
 
-GestionSauvegarde.o:
+GestionSauvegarde.o: GestionSauvegarde.cpp Constante.h Nourriture.h
 
-	g++ GestionSauvegarde.cpp -o GestionSauvegarde
+	g++  -c -std=c++11 GestionSauvegarde.cpp -o GestionSauvegarde.o
 
